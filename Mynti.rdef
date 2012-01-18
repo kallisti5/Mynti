@@ -1,0 +1,13 @@
+resource app_signature "application/x-vnd.Mynti";
+
+resource app_version {
+    major      = 0,
+    middle     = 0,
+    minor      = 1,
+    variety    = B_APPV_FINAL,
+    internal   = 0,
+    short_info = "Mynti",
+    long_info  = "Mynti, Weather on your Haiku Desktop"
+};
+
+resource app_flags B_SINGLE_LAUNCH | B_BACKGROUND_APP;
