@@ -26,9 +26,11 @@ MyntiDeskbarView::MyntiDeskbarView()
 
 
 MyntiDeskbarView::MyntiDeskbarView(BMessage* message)
-    : BView(
-        BRect(0, 0, 15, 15), DESKBAR_ITEM_NAME, B_FOLLOW_NONE,
-        B_WILL_DRAW | B_PULSE_NEEDED)
+    :
+	BView(BRect(0, 0, 15, 15), DESKBAR_ITEM_NAME,B_FOLLOW_NONE,
+		B_WILL_DRAW | B_PULSE_NEEDED),
+	fWeatherTemperature(32),
+	fWeatherConditions(0)
 {
 	SetFont(be_plain_font);
 	SetViewColor(B_TRANSPARENT_COLOR);
@@ -89,7 +91,7 @@ MyntiDeskbarView::Draw(BRect updateRect)
 			
 
 	char string[5];
-	sprintf(string, "97\xc2\xb0");
+	sprintf(string, "%" B_PRId32 "\xc2\xb0", fWeatherTemperature);
 	
 	font_height height; 
 	GetFontHeight(&height);
@@ -144,9 +146,12 @@ MyntiDeskbarView::MouseDown(BPoint point)
 void
 MyntiDeskbarView::Pulse()
 {
+	fWeatherTemperature++;
 	fWeatherConditions++;
 	if (fWeatherConditions > 3)
 		fWeatherConditions = 0;
+	if (fWeatherTemperature > 199)
+		fWeatherTemperature = 0;
 
 	// TODO: check for Weather Update here
 	Invalidate();

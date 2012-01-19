@@ -33,6 +33,7 @@ public:
 
 private:
 	uint32 fWeatherConditions;
+	int32 fWeatherTemperature;
 
 	typedef BView superView;
 	virtual void QuitRequested();
