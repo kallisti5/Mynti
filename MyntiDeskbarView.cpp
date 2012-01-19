@@ -30,7 +30,7 @@ MyntiDeskbarView::MyntiDeskbarView(BMessage* message)
 	SetFont(be_plain_font);
 	SetViewColor(B_TRANSPARENT_COLOR);
 	
-	float shelfWidth = StringWidth("000C") + 4;
+	float shelfWidth = StringWidth("100o") + 4;
 	ResizeTo(shelfWidth, 15);
 }
 
