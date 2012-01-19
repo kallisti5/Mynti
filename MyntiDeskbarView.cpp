@@ -9,6 +9,8 @@
 #include "MyntiApp.h"
 #include "MyntiDeskbarView.h"
 
+#include <Bitmap.h>
+#include <IconUtils.h>
 #include <MenuItem.h>
 #include <PopUpMenu.h>
 
@@ -63,23 +65,29 @@ void
 MyntiDeskbarView::Draw(BRect updateRect)
 {
 	superView::Draw(updateRect);
-	
+
+
+	BBitmap bitmap(BRect(0,0,15,15), B_RGB32);
+	BIconUtils::GetVectorIcon(kDeskbarSun, sizeof(kDeskbarSun), &bitmap);
+
 	char string[5];
 	sprintf(string, "97\xc2\xb0");
 	
 	font_height height; 
 	GetFontHeight(&height);
-	BRect rect = Bounds();
 	
 	float width = StringWidth(string);
+	BRect rect = Bounds();
 	float x = 1 + (rect.Width() - width)/2;
 	float y = height.ascent
 	            + (rect.Height() - (height.ascent + height.descent))/2;
 	
 	SetHighColor(Parent()->ViewColor());
-	FillRect(updateRect);
-	
 	SetLowColor(Parent()->ViewColor());
+	FillRect(updateRect);
+	SetDrawingMode(B_OP_ALPHA);
+	DrawBitmap(&bitmap);
+
 	SetHighColor(TEXT_COLOR);
 	SetDrawingMode(B_OP_OVER);
 	DrawString(string, BPoint(x, y));
