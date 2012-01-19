@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="48"
+   height="48"
+   id="svg3719"
+   version="1.1"
+   inkscape:version="0.48.2 r9819"
+   sodipodi:docname="sun.svg">
+  <defs
+     id="defs3721">
+    <symbol
+       viewBox="0 0 250 150"
+       id="rainbow">
+      <title
+         id="title4418">rainbow</title>
+    </symbol>
+    <symbol
+       viewBox="0 0 150 150"
+       id="sunny">
+      <title
+         id="title4308">sunny</title>
+      <g
+         id="g4310"
+         style="stroke:#ffff00;stroke-width:7">
+        <line
+           id="line4312"
+           transform="matrix(0.93969262,-0.34202014,0.34202014,0.93969262,-21.128457,30.174564)"
+           y2="75"
+           x2="39"
+           y1="75"
+           x1="22" />
+        <line
+           id="line4314"
+           transform="matrix(0.99756405,0.06975647,-0.06975647,0.99756405,5.4144318,-5.0490393)"
+           y2="75"
+           x2="39"
+           y1="75"
+           x1="22" />
+        <line
+           id="line4316"
+           transform="matrix(0.88294759,0.46947156,-0.46947156,0.88294759,43.989298,-26.431437)"
+           y2="75"
+           x2="39"
+           y1="75"
+           x1="22" />
+        <line
+           id="line4318"
+           transform="matrix(0.61566148,0.78801075,-0.78801075,0.61566148,87.926196,-30.275417)"
+           y2="75"
+           x2="39"
+           y1="75"
+           x1="22" />
+        <line
+           id="line4320"
+           transform="matrix(0.2419219,0.97029573,-0.97029573,0.2419219,129.62804,-15.916322)"
+           y2="75"
+           x2="39"
+           y1="75"
+           x1="22" />
+        <line
+           id="line4322"
+           transform="matrix(-0.17364818,0.98480775,-0.98480775,-0.17364818,161.88419,14.163032)"
+           y2="75"
+           x2="39"
+           y1="75"
+           x1="22" />
+        <line
+           id="line4324"
+           transform="matrix(-0.5591929,0.82903757,-0.82903757,-0.5591929,179.11729,54.76165)"
+           y2="75"
+           x2="39"
+           y1="75"
+           x1="22" />
+        <line
+           id="line4326"
+           transform="matrix(-0.8480481,0.52991926,-0.52991926,-0.8480481,178.34755,98.859662)"
+           y2="75"
+           x2="39"
+           y1="75"
+           x1="22" />
+        <line
+           id="line4328"
+           transform="matrix(-0.99026807,0.1391731,-0.1391731,-0.99026807,159.70809,138.83212)"
+           y2="75"
+           x2="39"
+           y1="75"
+           x1="22" />
+        <line
+           id="line4330"
+           transform="matrix(-0.9612617,-0.27563736,0.27563736,-0.9612617,126.42183,167.76743)"
+           y2="75"
+           x2="39"
+           y1="75"
+           x1="22" />
+        <line
+           id="line4332"
+           transform="matrix(-0.76604444,-0.64278761,0.64278761,-0.76604444,84.244263,180.6624)"
+           y2="75"
+           x2="39"
+           y1="75"
+           x1="22" />
+        <line
+           id="line4334"
+           transform="matrix(-0.43837115,-0.89879405,0.89879405,-0.43837115,40.468283,175.28739)"
+           y2="75"
+           x2="39"
+           y1="75"
+           x1="22" />
+        <line
+           id="line4336"
+           transform="matrix(-0.0348995,-0.99939083,0.99939083,-0.0348995,2.6631502,152.57177)"
+           y2="75"
+           x2="39"
+           y1="75"
+           x1="22" />
+        <line
+           id="line4338"
+           transform="matrix(0.37460659,-0.92718385,0.92718385,0.37460659,-22.634284,116.44329)"
+           y2="75"
+           x2="39"
+           y1="75"
+           x1="22" />
+        <line
+           id="line4340"
+           transform="matrix(0.7193398,-0.69465837,0.69465837,0.7193398,-31.049863,73.148893)"
+           y2="75"
+           x2="39"
+           y1="75"
+           x1="22" />
+        <circle
+           id="circle4342"
+           r="25"
+           cy="75"
+           cx="75"
+           d="M 100,75 C 100,88.807119 88.807119,100 75,100 61.192881,100 50,88.807119 50,75 50,61.192881 61.192881,50 75,50 c 13.807119,0 25,11.192881 25,25 z"
+           sodipodi:cx="75"
+           sodipodi:cy="75"
+           sodipodi:rx="25"
+           sodipodi:ry="25"
+           style="fill:#ffff00" />
+      </g>
+    </symbol>
+    <style
+       id="css"
+       type="text/css">
+
+#cloud2 {stroke:#666; stroke-width:12; stroke-linecap:round; fill:none;}
+
+</style>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.98994949"
+     inkscape:cx="193.2023"
+     inkscape:cy="-55.907809"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1600"
+     inkscape:window-height="850"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata3724">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-1004.3622)">
+    <use
+       id="use4457"
+       height="0.30000001"
+       width="0.15000001"
+       y="0.72000003"
+       x="0.82999998"
+       xlink:href="#rainbow"
+       transform="matrix(576.04719,0,0,392.45658,3.0664887,569.72024)" />
+    <use
+       id="use4451"
+       height="0.30000001"
+       width="0.15000001"
+       y="0.72000003"
+       x="0.33000001"
+       xlink:href="#sunny"
+       transform="matrix(422.80991,0,0,217.58816,-147.15627,838.55513)" />
+  </g>
+</svg>
