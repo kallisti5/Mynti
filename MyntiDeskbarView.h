@@ -32,6 +32,8 @@ public:
     virtual void Pulse();
 
 private:
+	uint32 fWeatherConditions;
+
 	typedef BView superView;
 	virtual void QuitRequested();
 

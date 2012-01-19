@@ -69,7 +69,24 @@ MyntiDeskbarView::Draw(BRect updateRect)
 
 
 	BBitmap bitmap(BRect(0,0,15,15), B_RGB32);
-	BIconUtils::GetVectorIcon(kImageNoData, sizeof(kImageNoData), &bitmap);
+
+	switch(fWeatherConditions) {
+		case 0:
+			BIconUtils::GetVectorIcon(kImageNoData, sizeof(kImageNoData), &bitmap);
+			break;
+		case 1:
+			BIconUtils::GetVectorIcon(kImageSun, sizeof(kImageSun), &bitmap);
+			break;
+		case 2:
+			BIconUtils::GetVectorIcon(kImageRain, sizeof(kImageRain), &bitmap);
+			break;
+		case 3:
+			BIconUtils::GetVectorIcon(kImageSnow, sizeof(kImageSnow), &bitmap);
+			break;
+		default:
+			BIconUtils::GetVectorIcon(kImageNoData, sizeof(kImageNoData), &bitmap);
+	}
+			
 
 	char string[5];
 	sprintf(string, "97\xc2\xb0");
@@ -127,6 +144,10 @@ MyntiDeskbarView::MouseDown(BPoint point)
 void
 MyntiDeskbarView::Pulse()
 {
+	fWeatherConditions++;
+	if (fWeatherConditions > 3)
+		fWeatherConditions = 0;
+
 	// TODO: check for Weather Update here
 	Invalidate();
 }
