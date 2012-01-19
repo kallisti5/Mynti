@@ -8,6 +8,7 @@
 
 #include "MyntiApp.h"
 #include "MyntiDeskbarView.h"
+#include "MyntiImages.h"
 
 #include <Bitmap.h>
 #include <IconUtils.h>
@@ -32,7 +33,7 @@ MyntiDeskbarView::MyntiDeskbarView(BMessage* message)
 	SetFont(be_plain_font);
 	SetViewColor(B_TRANSPARENT_COLOR);
 	
-	float shelfWidth = StringWidth("100o") + 4;
+	float shelfWidth = StringWidth("100o") + 18;
 	ResizeTo(shelfWidth, 15);
 }
 
@@ -68,7 +69,7 @@ MyntiDeskbarView::Draw(BRect updateRect)
 
 
 	BBitmap bitmap(BRect(0,0,15,15), B_RGB32);
-	BIconUtils::GetVectorIcon(kDeskbarSun, sizeof(kDeskbarSun), &bitmap);
+	BIconUtils::GetVectorIcon(kImageNoData, sizeof(kImageNoData), &bitmap);
 
 	char string[5];
 	sprintf(string, "97\xc2\xb0");
@@ -78,8 +79,8 @@ MyntiDeskbarView::Draw(BRect updateRect)
 	
 	float width = StringWidth(string);
 	BRect rect = Bounds();
-	float x = 1 + (rect.Width() - width)/2;
-	float y = height.ascent
+	float x = 18;
+	float y = 1 + height.ascent
 	            + (rect.Height() - (height.ascent + height.descent))/2;
 	
 	SetHighColor(Parent()->ViewColor());
