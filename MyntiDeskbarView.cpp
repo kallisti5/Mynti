@@ -1,10 +1,12 @@
 /*
  * Mynti Weather
  *
- * Weather on your Haiku desktop
- * 2012, Alexander von Gluck IV <kallisti5@unixzen.com>
+ * Copyright 2012-2013, Alexander von Gluck IV
+ * Released under the terms of the MIT license
  *
+ * http://unixzen.com, http://github.com/kallisti5
  */
+
 
 #include "MyntiApp.h"
 #include "MyntiDeskbarView.h"
